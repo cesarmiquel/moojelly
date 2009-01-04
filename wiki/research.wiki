@@ -1,0 +1,23 @@
+#summary Research gathered while hacking SML2
+
+= Introduction =
+
+This document is not for users, but for people wanting to make there own SML2 hacks. As it goes into detail on file format.
+
+*Header:*
+:says where to load everything for each level.
+
+0x13 bytes
+D4 01 22 00 C0 01 50 00 00 58 00 00 40 09 01 E4 D0 38 00 04
+	
+  * Bytes 00 to 03 (D4 01 22 00)	- Mario's starting coordinates. D4 01 = X, 22 00 = Y.
+  * Bytes 04 to 07 (C0 01 50 00)	- Screen focus coordinates. C0 01 = X, 50 00 = Y.
+  * Byte 08 (00)					- Screen focus shift. Not practically useful in any way.
+  * Byte 09 (58)					- No idea. If you figure this one out, be sure to contact me.
+  * Byte 0A (00)					- Level number.
+  * Bytes 0B and 0C (00 40)			- Tilemap pointers. All from bank 8.
+  * Byte 0D (09)					- Map bank.
+  * Byte 0E (01)					- Music.
+  * Bytes 0F to 11 (E4 D0 38)		- Palettes. E4 = Background, D0 = Sprite, 38 = Sprite.
+  * Byte 12 (00)					- Second map byte.
+  * Byte 13 (04)					- Time. (Multiply by 0x64 to get the time in Decimal)
