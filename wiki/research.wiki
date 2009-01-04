@@ -5,7 +5,8 @@
 This document is not for users, but for people wanting to make there own SML2 hacks. As it goes into detail on file format.
 
 *Header:*
-:says where to load everything for each level.
+
+says where to load everything for each level.
 
 0x13 bytes
 D4 01 22 00 C0 01 50 00 00 58 00 00 40 09 01 E4 D0 38 00 04
@@ -21,3 +22,38 @@ D4 01 22 00 C0 01 50 00 00 58 00 00 40 09 01 E4 D0 38 00 04
   * Bytes 0F to 11 (E4 D0 38)		- Palettes. E4 = Background, D0 = Sprite, 38 = Sprite.
   * Byte 12 (00)					- Second map byte.
   * Byte 13 (04)					- Time. (Multiply by 0x64 to get the time in Decimal)
+
+*level borders:*
+
+Byte 0x0D of the level's header is the Map Bank byte. The Intro level's map bank is 09 (0x5618). 
+Byte 0x12 of the level's header is the second map byte. The Intro level's second map is 00 (0x561D). 
+
+To get to the level scrolls array: 0x4000 x Map_Bank. 
+- 0x4000 is one Game Boy 'bank' 
+- map_bank in this case is 0x09. 
+- The result is 0x24000 
+
+When you've gone to the offset, you'll find two pointers; 0x04 and 0x40. 
+-The 0x04 points to the start of the scroll box array. 
+-0x40 is covered elsewhere. 
+
+Then: (0x24000 + 0x04) + (second_map x 0x30) 
+-0x24000 is the result to the last part. 
+-Result 0x24004. which is the scroll box array of the intro level 
+-All scrollbox arrays are 0x30 bytes long. 
+-There are 16 columns and 3 rows of scrollboxes. 
+-One scrollbox is 16 blocks high and wide. 
+
+06 04 04 04 04 04 04 04 04 04 04 04 04 04 04 05 
+0E 0C 0C 0C 0C 0C 0C 0C 0C 0C 0C 0C 0C 0C 0C 0D 
+0A 0C 0D 00 0C 0C 0C 0C 00 00 00 00 00 0F 00 00 
+
+Disregard the first nibble of each byte, as it serves no purpose and is always 0. 
+The second nibble is what matters, though. 
+Look at the bits of the first scrollbox.6 = 0110 in binary. 
+Now think of 0110 as BTLR. B means Bottom, T means Top, L means Left, and R means Right, respectively. 
+If a bit is set, it means you cannot see nor go to the screen in the direction the bit represents. 
+
+1101 would mean you had no choice but to go left. 
+
+-Original information from CoolToby, Compiled by RacoonSam, Rewritten and corrected by SmellyMoo 
