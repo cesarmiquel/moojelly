@@ -45,7 +45,9 @@ Then: (0x24000 + 0x04) + (second_map x 0x30)
 -One scrollbox is 16 blocks high and wide. 
 
 06 04 04 04 04 04 04 04 04 04 04 04 04 04 04 05 
+
 0E 0C 0C 0C 0C 0C 0C 0C 0C 0C 0C 0C 0C 0C 0C 0D 
+
 0A 0C 0D 00 0C 0C 0C 0C 00 00 00 00 00 0F 00 00 
 
 Disregard the first nibble of each byte, as it serves no purpose and is always 0. 
