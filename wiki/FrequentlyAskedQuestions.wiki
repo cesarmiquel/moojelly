@@ -1,0 +1,6 @@
+#summary FAQ
+#labels faq
+
+= Introduction =
+
+As this has just entered beta, documentation is low on the ground. I plan to add it in time.
