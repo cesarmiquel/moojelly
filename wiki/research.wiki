@@ -62,6 +62,7 @@ If a bit is set, it means you cannot see nor go to the screen in the direction t
 
 *Tile-map *
 
+{{{
 Notes: Blank sprite means blank sprite. You can add anything to it.
 
 	??? means that I haven't identified the sprite.
@@ -212,6 +213,7 @@ Space Zone:
 	 0x62A3A -  4 bytes -  1 tile:	Star's eyes, frame 1
 	 0x62A42 -  4 bytes -  1 tile:	Star's eyes, frame 2
 	 0x62A4A -  4 bytes -  1 tile:	Star's eyes, frame 3
+}}}
 
 *Main-map Path format:*
 
