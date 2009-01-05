@@ -13,9 +13,11 @@ I use this to keep track of coding.
   * overworld paths
   * colorise pipes from warp
   * patching changes checksums (header and rom)
+  * XOR saves to hide content
 
 *Good:*
 
+  * trial version can't load
   * drop down list of tile sets
   * cursor changes
   * add that you can't view patched ROM
