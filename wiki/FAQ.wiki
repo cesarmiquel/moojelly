@@ -7,10 +7,14 @@ Moojelly is still in beta, so there is no documentation, so you probably have qu
 
 *FAQ:*
 
-Q: Where do I get a serial code for moojelly?
+*Q:* Where do I get a serial code for moojelly?
 
-A: only from smellymoo, the developer. (its a gmail address, no prize for guessing it)
+*A:* only from *smellymoo*, the developer. (its a gmail address, no prize for guessing it)
 
-Q: Why if its free are there serial codes?
+*Q:* Why if its free are there serial codes?
 
-A: to make you give me a valid email address so I can contact you for your patches, so I can compile them into my complete patch.
+*A:* to make you give me a valid email address so I can contact you for your patches, so I can compile them into my complete patch.
+
+*Q:* how do I do X?
+
+*A:* try your best, if you can't figure it out, give me an email.
