@@ -14,6 +14,12 @@ I use this to keep track of coding.
   * colorise pipes from warp
   * patching changes checksums (header and rom)
   * XOR saves to hide content
+  * serial key:
+    * rtrim id last 5 digits
+    * convert '-'in id to '~'
+    * start each id with ident (M,H,P,E)
+    * id > 5 char
+    * only add emergency id when low on id's
 
 *Good:*
 
