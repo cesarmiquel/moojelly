@@ -8,22 +8,14 @@ I use this to keep track of coding.
   * write some help before I release fully
   * add warp editor
   * nsic sections and unselected
-  * header buffer
   * patching warning of size: sprites
-  * overworld paths
-  * colorise pipes from warp
+  * edit overworld paths
   * patching changes checksums (header and rom)
-  * XOR saves to hide content
-  * serial key:
-    * rtrim id last 5 digits
-    * convert '-'in id to '~'
-    * start each id with ident (M,H,P,E)
-    * id > 5 char
-    * only add emergency id when low on id's
 
 *Good:*
 
-  * trial version can't load
+  * colorise pipes from warp
+  * header buffer
   * drop down list of tile sets
   * cursor changes
   * add that you can't view patched ROM
