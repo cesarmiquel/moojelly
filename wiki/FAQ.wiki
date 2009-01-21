@@ -1,4 +1,5 @@
 #summary Frequently Asked Questions, and there answers.
+#labels Featured
 
 = Introduction =
 
@@ -9,11 +10,27 @@ Moojelly is still in beta, so there is no documentation, so you probably have qu
 
 *Q:* Where do I get a serial code for moojelly?
 
-*A:* only from *smellymoo*, the developer. (its a gmail address, no prize for guessing it)
+*A:* registration has been removed since 1.0.2, download a new version.
 
-*Q:* Why if its free are there serial codes?
 
-*A:* to make you give me a valid email address so I can contact you for your patches, so I can compile them into my complete patch.
+*Q:* why does it mess up the ROM if I put more sprites in a level.
+
+*A:* there is a global total amount of sprites and items, take some out of another level.
+
+
+*Q:* I get "Block-map to large. Increase of overall horizontal detail. will probably generate corrupted ROM."
+
+*A:* due to how SML2 is coded it has a limit to how much detail in the horizontal plain in one block of levels, when it is patching check which levels are grouped and if you want to add more detail to one level take away detail from another in that group.
+
+by horizontal detail I mean:
+  * 'XOXOXOX' has 6 changes of block and doesn't compress
+  * 'XOOOXXX' has 2 changes of block and compresses to 5 bytes
+
+
+*Q:* how do I set the alignment of the pattern tool?
+
+*A:* press control as you click.
+
 
 *Q:* how do I do X?
 
