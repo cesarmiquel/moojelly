@@ -1,13 +1,6 @@
 #summary Frequently Asked Questions, and there answers.
 #labels Featured
 
-= Introduction =
-
-Moojelly is still in beta, so there is no documentation, so you probably have questions.
-
-
-*FAQ:*
-
 *Q:* Where do I get a serial code for moojelly?
 
 *A:* registration has been removed since 1.0.2, download a new version.
