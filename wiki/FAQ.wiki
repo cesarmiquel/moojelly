@@ -1,5 +1,5 @@
 #summary Frequently Asked Questions, and there answers.
-#labels Featured
+#labels Featured,Help
 
 *Q:* Where do I get a serial code for moojelly?
 
