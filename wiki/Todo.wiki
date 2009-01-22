@@ -5,6 +5,7 @@
 I use this to keep track of coding.
 
 *Important:*
+  * help links to wiki help section + more links
   * write some help before I release fully
   * add warp editor
   * nsic sections and unselected
