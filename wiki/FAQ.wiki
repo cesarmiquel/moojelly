@@ -27,4 +27,8 @@ by horizontal detail I mean:
 
 *Q:* how do I do X?
 
-*A:* try your best, if you can't figure it out, give me an email.
+*A:* try your best, if you can't figure it out, comment bellow.
+
+*Q:* X is broken.
+
+*A:* open an issue and I will help you.
